@@ -1,5 +1,6 @@
 import React from 'react';
 import Search from './Search';
+import { MdOutlineCatchingPokemon } from "react-icons/md";
 
 
 const Header = ({ onSearch, onSort }) => {
@@ -7,7 +8,7 @@ const Header = ({ onSearch, onSort }) => {
     <header className="header">
       <div className="container">
         <div className="logo-wrapper">
-          <img src="./assets/pokeball.svg" alt="pokeball" />
+        <MdOutlineCatchingPokemon style={{ height: '40px', width: '40px',  color: 'white' }} className='logo-react-icon' />
           <h1>Pokédex</h1>
         </div>
         <div className="search-wrapper">

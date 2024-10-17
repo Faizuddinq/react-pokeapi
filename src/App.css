@@ -136,10 +136,13 @@ body {
 .logo-wrapper > h1 {
   color: var(--grayscale-white);
 }
+.logo-wrapper > logo-react-icon {
+  height: 50px;
+}
 
 .logo-wrapper > img {
   margin-right: 16px;
-  width: 40px;
+  width: 80px;
 }
 
 .search-wrapper,
@@ -156,21 +159,24 @@ body {
   background-color: var(--grayscale-white);
   border-radius: 16px;
   box-shadow: var(--drop-shadow-inner);
-  height: 32px;
+  height: 36px;
   gap: 8px;
 }
 
-.search-icon {
+
+.search-wrap> .search-icon {
   margin-left: 16px;
+  height: 40px;
 }
 
-.search-wrap svg path {
+/* .search-wrap svg path {
   fill: var(--identity-primary);
-}
+} */
 
 .search-wrap > input {
-  width: 66%;
-  border: 1px solid gray;
+  width: 80%;
+  height: 30px;
+  border: 0.5px solid gray;
   border-radius: 20px;
   padding: 2px;
   margin: 2px;
@@ -350,7 +356,7 @@ body {
   margin-bottom: 8px;
 }
 .back-btn{
-  width: 42px;
+  width: 32px;
   height: 42px;
 }
 .back-btn:hover{
@@ -397,6 +403,15 @@ body {
   position: relative;
   z-index: 2;
   margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.rotating {
+  animation: spin 1s linear infinite;
 }
 
 .power-wrapper {

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FaSearch } from "react-icons/fa";
+
 
 const Search = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -15,7 +17,7 @@ const Search = ({ onSearch }) => {
 
   return (
     <div className="search-wrap">
-      <img src="./assets/search.svg" alt="search" className="search-icon" />
+      <FaSearch className="search-icon" />
       <input
         type="text"
         className="search-input body3-fonts"
